@@ -1,0 +1,45 @@
+[
+  {
+    "id": "sit_to_stand",
+    "name": "Sit to Stand",
+    "instruction": "Child rises from a sitting position to standing without assistance.",
+    "criteria_0_to_3": {
+      "0": "Cannot initiate or complete the movement.",
+      "1": "Initiates movement but requires significant support or stops early.",
+      "2": "Completes movement with compensations or minor support.",
+      "3": "Stands fully without hand support or compensations."
+    },
+    "required_checks": [
+      "hand_support"
+    ]
+  },
+  {
+    "id": "run_10m",
+    "name": "Run 10m",
+    "instruction": "Child runs 10 meters at a steady pace.",
+    "criteria_0_to_3": {
+      "0": "Unable to run or cannot complete the distance.",
+      "1": "Runs with major deviations, very slow, or stops frequently.",
+      "2": "Runs with minor deviations or reduced speed.",
+      "3": "Runs with clear flight phase and stable rhythm."
+    },
+    "required_checks": [
+      "flight_phase"
+    ]
+  },
+  {
+    "id": "jump_forward",
+    "name": "Jump forward",
+    "instruction": "Child jumps forward using both feet.",
+    "criteria_0_to_3": {
+      "0": "Unable to leave the ground.",
+      "1": "Minimal jump with significant asymmetry or loss of balance.",
+      "2": "Jump with partial symmetry or unstable landing.",
+      "3": "Symmetrical jump with clear flight phase and stable landing."
+    },
+    "required_checks": [
+      "flight_phase",
+      "symmetry"
+    ]
+  }
+]
