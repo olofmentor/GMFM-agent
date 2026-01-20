@@ -1,45 +1,1129 @@
 [
   {
-    "id": "sit_to_stand",
-    "name": "Sit to Stand",
-    "instruction": "Child rises from a sitting position to standing without assistance.",
+    "id": "A01_head_midline_supine",
+    "domain": "A",
+    "name": "Head in midline (supine)",
+    "instruction": "Child lies on the back and keeps head aligned in midline.",
     "criteria_0_to_3": {
-      "0": "Cannot initiate or complete the movement.",
-      "1": "Initiates movement but requires significant support or stops early.",
-      "2": "Completes movement with compensations or minor support.",
-      "3": "Stands fully without hand support or compensations."
+      "0": "Cannot lift/align head toward midline.",
+      "1": "Initiates head alignment but cannot maintain.",
+      "2": "Maintains briefly or with visible instability.",
+      "3": "Maintains steadily in midline."
     },
-    "required_checks": [
-      "hand_support"
-    ]
+    "required_checks": ["head_control"]
   },
   {
-    "id": "run_10m",
-    "name": "Run 10m",
-    "instruction": "Child runs 10 meters at a steady pace.",
+    "id": "A02_hands_to_midline_supine",
+    "domain": "A",
+    "name": "Hands to midline (supine)",
+    "instruction": "Child brings both hands toward midline while supine.",
     "criteria_0_to_3": {
-      "0": "Unable to run or cannot complete the distance.",
-      "1": "Runs with major deviations, very slow, or stops frequently.",
-      "2": "Runs with minor deviations or reduced speed.",
+      "0": "No purposeful hand movement toward midline.",
+      "1": "Initiates but does not reach midline.",
+      "2": "Reaches midline with effort/asymmetry.",
+      "3": "Brings hands to midline smoothly and symmetrically."
+    },
+    "required_checks": ["upper_limb_control", "symmetry"]
+  },
+  {
+    "id": "A03_pelvic_lift_bridge",
+    "domain": "A",
+    "name": "Pelvic lift (bridge)",
+    "instruction": "Child lifts pelvis off the surface while lying on the back.",
+    "criteria_0_to_3": {
+      "0": "No pelvic lift.",
+      "1": "Initiates lift but minimal clearance or stops.",
+      "2": "Lifts pelvis partially with compensations.",
+      "3": "Lifts pelvis clearly and maintains briefly with control."
+    },
+    "required_checks": ["hip_extension", "trunk_control"]
+  },
+  {
+    "id": "A04_roll_supine_to_side",
+    "domain": "A",
+    "name": "Roll supine to side",
+    "instruction": "Child rolls from back onto side independently.",
+    "criteria_0_to_3": {
+      "0": "No rolling attempt.",
+      "1": "Initiates roll but does not complete.",
+      "2": "Completes roll with compensations/pauses.",
+      "3": "Completes roll smoothly and independently."
+    },
+    "required_checks": ["trunk_rotation"]
+  },
+  {
+    "id": "A05_roll_supine_to_prone",
+    "domain": "A",
+    "name": "Roll supine to prone",
+    "instruction": "Child rolls from back to belly independently.",
+    "criteria_0_to_3": {
+      "0": "No rolling attempt to prone.",
+      "1": "Initiates but cannot complete to prone.",
+      "2": "Reaches prone with effort/compensations.",
+      "3": "Rolls to prone smoothly without assistance."
+    },
+    "required_checks": ["trunk_rotation"]
+  },
+  {
+    "id": "A06_pull_to_sit_from_supine",
+    "domain": "A",
+    "name": "Pull to sit (from supine)",
+    "instruction": "Child transitions from lying on back to sitting using own effort (minimal external cue).",
+    "criteria_0_to_3": {
+      "0": "Cannot initiate transition.",
+      "1": "Initiates but needs substantial assistance.",
+      "2": "Completes with compensations or light assistance.",
+      "3": "Transitions to sit independently with head/trunk control."
+    },
+    "required_checks": ["trunk_flexion", "head_control"]
+  },
+  {
+    "id": "A07_prone_on_elbows",
+    "domain": "A",
+    "name": "Prone on elbows",
+    "instruction": "Child lies on belly and props on forearms.",
+    "criteria_0_to_3": {
+      "0": "Cannot prop on forearms.",
+      "1": "Initiates prop but collapses quickly.",
+      "2": "Props with instability/asymmetry.",
+      "3": "Props steadily with head up and trunk control."
+    },
+    "required_checks": ["shoulder_stability", "head_control"]
+  },
+  {
+    "id": "A08_prone_press_up_on_hands",
+    "domain": "A",
+    "name": "Prone press-up (on hands)",
+    "instruction": "Child pushes up from prone to supported on hands with elbows extended.",
+    "criteria_0_to_3": {
+      "0": "No press-up attempt.",
+      "1": "Initiates but cannot extend/support.",
+      "2": "Achieves partial extension or brief support.",
+      "3": "Supports on extended arms with control."
+    },
+    "required_checks": ["upper_limb_strength", "trunk_control"]
+  },
+  {
+    "id": "A09_prone_roll_to_supine",
+    "domain": "A",
+    "name": "Roll prone to supine",
+    "instruction": "Child rolls from belly to back independently.",
+    "criteria_0_to_3": {
+      "0": "No attempt to roll to supine.",
+      "1": "Initiates but does not complete.",
+      "2": "Completes with compensations/pauses.",
+      "3": "Rolls smoothly without assistance."
+    },
+    "required_checks": ["trunk_rotation"]
+  },
+  {
+    "id": "A10_prone_pivot_reach",
+    "domain": "A",
+    "name": "Prone pivot / reach",
+    "instruction": "In prone, child pivots or reaches to one side while maintaining support.",
+    "criteria_0_to_3": {
+      "0": "Cannot shift weight/reach.",
+      "1": "Initiates shift but loses support.",
+      "2": "Reaches with reduced control/asymmetry.",
+      "3": "Shifts weight and reaches with good control."
+    },
+    "required_checks": ["weight_shift", "upper_limb_support"]
+  },
+  {
+    "id": "A11_transition_prone_to_sit",
+    "domain": "A",
+    "name": "Transition prone to sitting",
+    "instruction": "Child moves from prone (belly) to sitting position.",
+    "criteria_0_to_3": {
+      "0": "Cannot initiate transition.",
+      "1": "Initiates but requires substantial assistance.",
+      "2": "Completes with compensations or light assistance.",
+      "3": "Transitions independently with control."
+    },
+    "required_checks": ["transitional_movement", "trunk_control"]
+  },
+  {
+    "id": "A12_supine_to_long_sit",
+    "domain": "A",
+    "name": "Supine to long sitting",
+    "instruction": "Child moves from supine to long sitting (legs forward).",
+    "criteria_0_to_3": {
+      "0": "Cannot initiate.",
+      "1": "Initiates but cannot complete without help.",
+      "2": "Completes with compensations/using arms heavily.",
+      "3": "Completes independently with controlled trunk."
+    },
+    "required_checks": ["trunk_flexion", "arm_support"]
+  },
+
+  {
+    "id": "B01_sit_supported_trunk",
+    "domain": "B",
+    "name": "Sitting with trunk support",
+    "instruction": "Child sits with external support at trunk/hips.",
+    "criteria_0_to_3": {
+      "0": "Cannot sit even with support.",
+      "1": "Sits briefly with heavy support.",
+      "2": "Sits with light support but unstable.",
+      "3": "Sits upright with minimal support."
+    },
+    "required_checks": ["postural_control"]
+  },
+  {
+    "id": "B02_sit_unsupported",
+    "domain": "B",
+    "name": "Sitting without support",
+    "instruction": "Child sits independently without using hands for support.",
+    "criteria_0_to_3": {
+      "0": "Unable to sit independently.",
+      "1": "Sits briefly then loses balance.",
+      "2": "Sits independently but unstable/leans.",
+      "3": "Sits steadily with upright posture."
+    },
+    "required_checks": ["balance"]
+  },
+  {
+    "id": "B03_sit_reach_forward",
+    "domain": "B",
+    "name": "Reach forward in sitting",
+    "instruction": "While sitting, child reaches forward and returns without falling.",
+    "criteria_0_to_3": {
+      "0": "Cannot reach without losing balance.",
+      "1": "Initiates reach but needs support.",
+      "2": "Reaches with instability or uses one hand for support.",
+      "3": "Reaches and returns with good control."
+    },
+    "required_checks": ["weight_shift", "protective_reactions"]
+  },
+  {
+    "id": "B04_sit_reach_side",
+    "domain": "B",
+    "name": "Reach to side in sitting",
+    "instruction": "While sitting, child reaches to side and returns.",
+    "criteria_0_to_3": {
+      "0": "Cannot shift/reach.",
+      "1": "Initiates but needs support.",
+      "2": "Completes with instability/asymmetry.",
+      "3": "Completes smoothly both sides (as applicable)."
+    },
+    "required_checks": ["weight_shift", "symmetry"]
+  },
+  {
+    "id": "B05_sit_turn_head_trunk",
+    "domain": "B",
+    "name": "Turn head/trunk in sitting",
+    "instruction": "While sitting, child turns to look over shoulder and returns.",
+    "criteria_0_to_3": {
+      "0": "Cannot turn without losing balance.",
+      "1": "Initiates but needs support.",
+      "2": "Turns with reduced control/uses hands.",
+      "3": "Turns and returns with stable sitting balance."
+    },
+    "required_checks": ["dynamic_balance"]
+  },
+  {
+    "id": "B06_sit_pick_object_floor",
+    "domain": "B",
+    "name": "Pick up object from floor (sitting)",
+    "instruction": "From sitting, child bends to pick up an object from the floor and returns.",
+    "criteria_0_to_3": {
+      "0": "Cannot attempt safely.",
+      "1": "Initiates bend but needs help/support.",
+      "2": "Picks up with instability or partial return.",
+      "3": "Picks up and returns to sitting with control."
+    },
+    "required_checks": ["forward_weight_shift", "return_to_upright"]
+  },
+  {
+    "id": "B07_sit_to_quadruped",
+    "domain": "B",
+    "name": "Sitting to hands-and-knees",
+    "instruction": "Child transitions from sitting to quadruped (hands-and-knees).",
+    "criteria_0_to_3": {
+      "0": "Cannot initiate.",
+      "1": "Initiates but needs substantial assistance.",
+      "2": "Completes with compensations/light assistance.",
+      "3": "Completes independently with control."
+    },
+    "required_checks": ["transitional_movement"]
+  },
+  {
+    "id": "B08_sit_to_stand",
+    "domain": "B",
+    "name": "Sit to stand",
+    "instruction": "Child rises from sitting to standing.",
+    "criteria_0_to_3": {
+      "0": "Cannot rise.",
+      "1": "Initiates but needs major assistance or stops early.",
+      "2": "Stands with compensations/uses hands or multiple attempts.",
+      "3": "Stands up independently with controlled extension."
+    },
+    "required_checks": ["hand_support", "hip_knee_extension"]
+  },
+  {
+    "id": "B09_floor_sit_to_stand",
+    "domain": "B",
+    "name": "Floor sit to stand",
+    "instruction": "Child rises from floor sitting to standing.",
+    "criteria_0_to_3": {
+      "0": "Cannot initiate.",
+      "1": "Initiates but needs major assistance.",
+      "2": "Completes with compensations (e.g., pushing on thighs/furniture).",
+      "3": "Stands from floor independently with control."
+    },
+    "required_checks": ["transitional_movement", "hand_support"]
+  },
+  {
+    "id": "B10_kneel_to_sit",
+    "domain": "B",
+    "name": "Kneeling to sitting",
+    "instruction": "Child transitions from kneeling to sitting in a controlled manner.",
+    "criteria_0_to_3": {
+      "0": "Cannot perform transition.",
+      "1": "Initiates but requires assistance.",
+      "2": "Completes with compensations/instability.",
+      "3": "Completes independently and smoothly."
+    },
+    "required_checks": ["hip_control", "control_descent"]
+  },
+  {
+    "id": "B11_sit_on_bench_no_feet_support",
+    "domain": "B",
+    "name": "Sit with reduced base of support",
+    "instruction": "Child sits with a reduced base of support (e.g., feet not firmly planted) and maintains balance.",
+    "criteria_0_to_3": {
+      "0": "Cannot maintain sitting.",
+      "1": "Maintains briefly with support.",
+      "2": "Maintains independently but wobbly.",
+      "3": "Maintains steady balance without hand support."
+    },
+    "required_checks": ["static_balance"]
+  },
+  {
+    "id": "B12_sit_step_over_object",
+    "domain": "B",
+    "name": "Move legs over object (sitting)",
+    "instruction": "While sitting, child lifts/moves legs to clear a small obstacle (one/both).",
+    "criteria_0_to_3": {
+      "0": "Cannot lift leg(s) to clear.",
+      "1": "Initiates but cannot clear without help.",
+      "2": "Clears with compensations/slow/one side only.",
+      "3": "Clears with control and minimal trunk compensation."
+    },
+    "required_checks": ["hip_flexion", "selective_control"]
+  },
+
+  {
+    "id": "C01_quadruped_hold",
+    "domain": "C",
+    "name": "Hold quadruped",
+    "instruction": "Child holds hands-and-knees position with weight through hands and knees.",
+    "criteria_0_to_3": {
+      "0": "Cannot achieve quadruped.",
+      "1": "Achieves briefly with heavy support.",
+      "2": "Holds independently but unstable/asymmetric.",
+      "3": "Holds steadily with good alignment."
+    },
+    "required_checks": ["upper_limb_support", "trunk_control"]
+  },
+  {
+    "id": "C02_quadruped_reach",
+    "domain": "C",
+    "name": "Reach in quadruped",
+    "instruction": "From quadruped, child reaches with one hand and returns without collapsing.",
+    "criteria_0_to_3": {
+      "0": "Cannot shift weight to reach.",
+      "1": "Initiates reach but loses support.",
+      "2": "Reaches with instability or compensations.",
+      "3": "Reaches and returns with controlled weight shift."
+    },
+    "required_checks": ["weight_shift", "shoulder_stability"]
+  },
+  {
+    "id": "C03_crawl_forward_short",
+    "domain": "C",
+    "name": "Crawl forward (short distance)",
+    "instruction": "Child crawls forward a short distance using arms and legs.",
+    "criteria_0_to_3": {
+      "0": "No forward crawling.",
+      "1": "Initiates but minimal distance.",
+      "2": "Crawls with pauses/asymmetry.",
+      "3": "Crawls with reciprocal pattern and control."
+    },
+    "required_checks": ["reciprocal_movement"]
+  },
+  {
+    "id": "C04_crawl_turn",
+    "domain": "C",
+    "name": "Crawl and turn",
+    "instruction": "Child crawls and changes direction (turns) while maintaining movement.",
+    "criteria_0_to_3": {
+      "0": "Cannot turn while crawling.",
+      "1": "Initiates turn but stops/collapses.",
+      "2": "Turns with instability/very slow.",
+      "3": "Turns smoothly maintaining crawl."
+    },
+    "required_checks": ["motor_planning", "dynamic_control"]
+  },
+  {
+    "id": "C05_transition_to_kneeling",
+    "domain": "C",
+    "name": "Move to kneeling",
+    "instruction": "Child transitions from floor to kneeling (low or high kneel).",
+    "criteria_0_to_3": {
+      "0": "Cannot initiate.",
+      "1": "Initiates but needs major assistance.",
+      "2": "Completes with compensations/light assistance.",
+      "3": "Completes independently with control."
+    },
+    "required_checks": ["transitional_movement"]
+  },
+  {
+    "id": "C06_low_kneel_hold",
+    "domain": "C",
+    "name": "Hold low kneeling",
+    "instruction": "Child maintains low kneeling with trunk upright.",
+    "criteria_0_to_3": {
+      "0": "Cannot hold kneeling.",
+      "1": "Holds briefly with support.",
+      "2": "Holds independently but unstable.",
+      "3": "Holds steadily with upright trunk."
+    },
+    "required_checks": ["hip_control", "postural_control"]
+  },
+  {
+    "id": "C07_high_kneel_hold",
+    "domain": "C",
+    "name": "Hold high kneeling",
+    "instruction": "Child maintains high kneeling (hips extended, trunk upright).",
+    "criteria_0_to_3": {
+      "0": "Cannot achieve high kneel.",
+      "1": "Achieves briefly with support.",
+      "2": "Holds independently but unstable/leans.",
+      "3": "Holds steadily without hand support."
+    },
+    "required_checks": ["hip_extension", "balance"]
+  },
+  {
+    "id": "C08_high_kneel_walk_forward",
+    "domain": "C",
+    "name": "Walk forward in high kneeling",
+    "instruction": "Child moves forward in high kneeling for a short distance.",
+    "criteria_0_to_3": {
+      "0": "No forward movement in kneel.",
+      "1": "Initiates but cannot progress without help.",
+      "2": "Moves forward with compensations/instability.",
+      "3": "Moves forward with control and rhythm."
+    },
+    "required_checks": ["dynamic_balance", "hip_control"]
+  },
+  {
+    "id": "C09_kneel_to_half_kneel",
+    "domain": "C",
+    "name": "Move to half-kneeling",
+    "instruction": "Child transitions from kneeling to half-kneeling (one foot forward).",
+    "criteria_0_to_3": {
+      "0": "Cannot initiate.",
+      "1": "Initiates but needs major assistance.",
+      "2": "Achieves position with compensations/hand support.",
+      "3": "Achieves half-kneel independently with control."
+    },
+    "required_checks": ["weight_shift", "selective_control"]
+  },
+  {
+    "id": "C10_hold_half_kneel",
+    "domain": "C",
+    "name": "Hold half-kneeling",
+    "instruction": "Child maintains half-kneeling without external support.",
+    "criteria_0_to_3": {
+      "0": "Cannot hold position.",
+      "1": "Holds briefly with support.",
+      "2": "Holds independently but unstable.",
+      "3": "Holds steadily, trunk upright."
+    },
+    "required_checks": ["balance", "hip_control"]
+  },
+  {
+    "id": "C11_half_kneel_to_stand",
+    "domain": "C",
+    "name": "Half-kneel to stand",
+    "instruction": "Child rises from half-kneeling to standing.",
+    "criteria_0_to_3": {
+      "0": "Cannot rise.",
+      "1": "Initiates but needs major assistance.",
+      "2": "Stands with compensations/hand support.",
+      "3": "Stands independently with controlled extension."
+    },
+    "required_checks": ["hand_support", "hip_knee_extension"]
+  },
+  {
+    "id": "C12_creep_over_obstacle",
+    "domain": "C",
+    "name": "Creep/crawl over low obstacle",
+    "instruction": "Child creeps/crawls over a low obstacle while maintaining forward movement.",
+    "criteria_0_to_3": {
+      "0": "Cannot attempt/clears no part.",
+      "1": "Initiates but needs help to clear.",
+      "2": "Clears with pauses/compensations.",
+      "3": "Clears smoothly with control."
+    },
+    "required_checks": ["motor_planning", "upper_limb_support"]
+  },
+
+  {
+    "id": "D01_stand_with_support",
+    "domain": "D",
+    "name": "Stand with support",
+    "instruction": "Child stands using external support (hands or furniture).",
+    "criteria_0_to_3": {
+      "0": "Cannot stand even with support.",
+      "1": "Stands briefly with heavy support.",
+      "2": "Stands with light support but unstable.",
+      "3": "Stands with minimal support and upright posture."
+    },
+    "required_checks": ["lower_limb_strength"]
+  },
+  {
+    "id": "D02_stand_unsupported",
+    "domain": "D",
+    "name": "Stand without support",
+    "instruction": "Child stands independently without holding on.",
+    "criteria_0_to_3": {
+      "0": "Cannot stand independently.",
+      "1": "Stands briefly then loses balance.",
+      "2": "Stands independently but unstable/uses arm strategies.",
+      "3": "Stands steadily with good alignment."
+    },
+    "required_checks": ["static_balance"]
+  },
+  {
+    "id": "D03_stand_reach_forward",
+    "domain": "D",
+    "name": "Reach forward in standing",
+    "instruction": "While standing, child reaches forward and returns without stepping/falling.",
+    "criteria_0_to_3": {
+      "0": "Cannot reach without loss of balance.",
+      "1": "Initiates reach but needs support/steps immediately.",
+      "2": "Reaches with instability or compensations.",
+      "3": "Reaches and returns with controlled balance."
+    },
+    "required_checks": ["limits_of_stability"]
+  },
+  {
+    "id": "D04_stand_reach_side",
+    "domain": "D",
+    "name": "Reach to side in standing",
+    "instruction": "While standing, child reaches laterally and returns.",
+    "criteria_0_to_3": {
+      "0": "Cannot reach laterally without support.",
+      "1": "Initiates but needs support or steps.",
+      "2": "Completes with instability/limited range.",
+      "3": "Completes with good control without stepping."
+    },
+    "required_checks": ["weight_shift"]
+  },
+  {
+    "id": "D05_stand_pick_object_floor",
+    "domain": "D",
+    "name": "Pick up object from floor (standing)",
+    "instruction": "Child bends to pick up an object from the floor and returns to standing.",
+    "criteria_0_to_3": {
+      "0": "Cannot attempt safely.",
+      "1": "Initiates bend but needs support/help.",
+      "2": "Picks up with instability or uses hands on legs/support.",
+      "3": "Picks up and returns without external support."
+    },
+    "required_checks": ["hip_hinge_control", "balance_recovery"]
+  },
+  {
+    "id": "D06_stand_step_forward",
+    "domain": "D",
+    "name": "Step forward and back",
+    "instruction": "From standing, child steps forward and returns to start.",
+    "criteria_0_to_3": {
+      "0": "Cannot step without help.",
+      "1": "Initiates but needs support or cannot return.",
+      "2": "Steps with instability/compensations.",
+      "3": "Steps forward and back with controlled balance."
+    },
+    "required_checks": ["single_leg_support", "dynamic_balance"]
+  },
+  {
+    "id": "D07_stand_step_over_low_object",
+    "domain": "D",
+    "name": "Step over low object",
+    "instruction": "Child steps over a low obstacle while standing/walking slowly.",
+    "criteria_0_to_3": {
+      "0": "Cannot clear obstacle.",
+      "1": "Initiates but needs assistance/support.",
+      "2": "Clears with compensations/contacts obstacle.",
+      "3": "Clears smoothly without contact and maintains balance."
+    },
+    "required_checks": ["foot_clearance", "balance"]
+  },
+  {
+    "id": "D08_turn_180_standing",
+    "domain": "D",
+    "name": "Turn 180 degrees",
+    "instruction": "Child turns around (approximately 180 degrees) in standing.",
+    "criteria_0_to_3": {
+      "0": "Cannot turn without major support.",
+      "1": "Initiates but stops or needs assistance.",
+      "2": "Turns independently but unstable/multiple steps with loss of control.",
+      "3": "Turns independently with good balance control."
+    },
+    "required_checks": ["turning_control"]
+  },
+  {
+    "id": "D09_stand_one_leg_brief",
+    "domain": "D",
+    "name": "Single-leg stand (brief)",
+    "instruction": "Child briefly lifts one foot and maintains balance (as able).",
+    "criteria_0_to_3": {
+      "0": "Cannot lift foot without falling/support.",
+      "1": "Lifts foot momentarily but immediately steps down.",
+      "2": "Maintains briefly with visible instability.",
+      "3": "Maintains with controlled posture for the set brief duration."
+    },
+    "required_checks": ["single_leg_balance"]
+  },
+  {
+    "id": "D10_squat_partial",
+    "domain": "D",
+    "name": "Partial squat",
+    "instruction": "Child performs a partial squat and returns to standing.",
+    "criteria_0_to_3": {
+      "0": "Cannot initiate squat safely.",
+      "1": "Initiates but needs support or cannot return.",
+      "2": "Completes with compensations/poor alignment.",
+      "3": "Completes with good alignment and controlled return."
+    },
+    "required_checks": ["knee_control", "control_descent"]
+  },
+  {
+    "id": "D11_kneel_to_stand",
+    "domain": "D",
+    "name": "Kneel to stand",
+    "instruction": "Child rises from kneeling (or half-kneel) to standing.",
+    "criteria_0_to_3": {
+      "0": "Cannot rise.",
+      "1": "Initiates but needs major assistance.",
+      "2": "Stands with compensations/hand support.",
+      "3": "Stands independently with controlled extension."
+    },
+    "required_checks": ["hip_knee_extension", "hand_support"]
+  },
+  {
+    "id": "D12_stand_on_step",
+    "domain": "D",
+    "name": "Stand on step/platform",
+    "instruction": "Child stands on a low step/platform maintaining balance.",
+    "criteria_0_to_3": {
+      "0": "Cannot get onto/stand on step.",
+      "1": "Stands briefly with support.",
+      "2": "Stands independently but unstable.",
+      "3": "Stands steadily without support."
+    },
+    "required_checks": ["balance", "foot_placement"]
+  },
+
+  {
+    "id": "E01_walk_forward_short",
+    "domain": "E",
+    "name": "Walk forward (short distance)",
+    "instruction": "Child walks forward a short distance independently (as able).",
+    "criteria_0_to_3": {
+      "0": "Unable to walk.",
+      "1": "Walks with major assistance or very unstable.",
+      "2": "Walks independently with deviations/pauses.",
+      "3": "Walks independently with stable rhythm."
+    },
+    "required_checks": ["gait_pattern"]
+  },
+  {
+    "id": "E02_walk_turn",
+    "domain": "E",
+    "name": "Walk and turn",
+    "instruction": "Child walks and performs a turn while maintaining balance.",
+    "criteria_0_to_3": {
+      "0": "Cannot turn while walking.",
+      "1": "Turns only with support/stops completely.",
+      "2": "Turns independently but unstable or multiple corrective steps.",
+      "3": "Turns smoothly without loss of balance."
+    },
+    "required_checks": ["turning_control", "dynamic_balance"]
+  },
+  {
+    "id": "E03_walk_backward",
+    "domain": "E",
+    "name": "Walk backward",
+    "instruction": "Child walks backward a short distance.",
+    "criteria_0_to_3": {
+      "0": "Cannot walk backward.",
+      "1": "Initiates but needs support or stops quickly.",
+      "2": "Walks backward independently but unstable.",
+      "3": "Walks backward with controlled steps and balance."
+    },
+    "required_checks": ["dynamic_balance"]
+  },
+  {
+    "id": "E04_walk_sideways",
+    "domain": "E",
+    "name": "Walk sideways",
+    "instruction": "Child takes sideways steps in both directions (as able).",
+    "criteria_0_to_3": {
+      "0": "Cannot step sideways.",
+      "1": "Initiates but needs support.",
+      "2": "Steps independently with instability/asymmetry.",
+      "3": "Steps sideways with control and symmetry."
+    },
+    "required_checks": ["lateral_control", "symmetry"]
+  },
+  {
+    "id": "E05_step_up_low",
+    "domain": "E",
+    "name": "Step up (low step)",
+    "instruction": "Child steps up onto a low step with one foot and brings the other up (as able).",
+    "criteria_0_to_3": {
+      "0": "Cannot step up.",
+      "1": "Steps up only with major support.",
+      "2": "Steps up independently but uses compensations/hand support.",
+      "3": "Steps up independently with controlled movement."
+    },
+    "required_checks": ["strength", "hand_support"]
+  },
+  {
+    "id": "E06_step_down_low",
+    "domain": "E",
+    "name": "Step down (low step)",
+    "instruction": "Child steps down from a low step with control.",
+    "criteria_0_to_3": {
+      "0": "Cannot step down safely.",
+      "1": "Steps down with major support.",
+      "2": "Steps down independently but unstable/poor control.",
+      "3": "Steps down independently with controlled descent."
+    },
+    "required_checks": ["control_descent", "balance"]
+  },
+  {
+    "id": "E07_climb_stairs_up",
+    "domain": "E",
+    "name": "Climb stairs up",
+    "instruction": "Child climbs up several steps (with or without railing, as per protocol).",
+    "criteria_0_to_3": {
+      "0": "Cannot climb stairs.",
+      "1": "Climbs only with major assistance.",
+      "2": "Climbs independently but uses compensations/rail heavily.",
+      "3": "Climbs with controlled pattern and minimal compensations."
+    },
+    "required_checks": ["stair_pattern", "hand_support"]
+  },
+  {
+    "id": "E08_climb_stairs_down",
+    "domain": "E",
+    "name": "Climb stairs down",
+    "instruction": "Child descends several steps with control.",
+    "criteria_0_to_3": {
+      "0": "Cannot descend stairs.",
+      "1": "Descends only with major assistance.",
+      "2": "Descends independently but unstable/uses rail heavily.",
+      "3": "Descends with controlled pattern and balance."
+    },
+    "required_checks": ["control_descent", "hand_support"]
+  },
+  {
+    "id": "E09_run_short",
+    "domain": "E",
+    "name": "Run (short distance)",
+    "instruction": "Child runs a short distance at own best effort.",
+    "criteria_0_to_3": {
+      "0": "Unable to run.",
+      "1": "Fast walk; no clear flight phase.",
+      "2": "Runs with reduced coordination/limited flight.",
+      "3": "Runs with clear flight phase and rhythm."
+    },
+    "required_checks": ["flight_phase"]
+  },
+  {
+    "id": "E10_stop_and_start_run",
+    "domain": "E",
+    "name": "Start/stop quickly",
+    "instruction": "Child starts moving quickly and stops with control.",
+    "criteria_0_to_3": {
+      "0": "Cannot perform start/stop.",
+      "1": "Initiates but needs support or loses balance.",
+      "2": "Performs with instability or delayed control.",
+      "3": "Starts and stops with good control."
+    },
+    "required_checks": ["motor_control", "balance_reaction"]
+  },
+  {
+    "id": "E11_jump_forward_two_feet",
+    "domain": "E",
+    "name": "Jump forward (two feet)",
+    "instruction": "Child jumps forward with both feet together.",
+    "criteria_0_to_3": {
+      "0": "Cannot leave the ground.",
+      "1": "Minimal lift; unstable/asymmetric.",
+      "2": "Clear jump but unstable landing or limited distance.",
+      "3": "Clear flight and stable landing with symmetry."
+    },
+    "required_checks": ["flight_phase", "symmetry"]
+  },
+  {
+    "id": "E12_jump_down_from_step",
+    "domain": "E",
+    "name": "Jump down (from low step)",
+    "instruction": "Child jumps down from a low step and lands safely.",
+    "criteria_0_to_3": {
+      "0": "Cannot jump down.",
+      "1": "Steps down or needs major support.",
+      "2": "Jumps down but unstable landing/uses hands.",
+      "3": "Jumps down with controlled landing."
+    },
+    "required_checks": ["landing_control"]
+  },
+  {
+    "id": "E13_hop_one_foot",
+    "domain": "E",
+    "name": "Hop (one foot)",
+    "instruction": "Child hops on one foot (as able).",
+    "criteria_0_to_3": {
+      "0": "Cannot hop.",
+      "1": "Initiates but no clear hop/loses balance.",
+      "2": "Performs a hop with instability/limited repetitions.",
+      "3": "Hops with clear flight and controlled landing."
+    },
+    "required_checks": ["single_leg_power", "flight_phase"]
+  },
+  {
+    "id": "E14_jump_over_line",
+    "domain": "E",
+    "name": "Jump over line/low marker",
+    "instruction": "Child jumps over a line or low marker with two feet.",
+    "criteria_0_to_3": {
+      "0": "Cannot clear marker.",
+      "1": "Attempts but contacts marker or loses balance.",
+      "2": "Clears but landing unstable/asymmetric.",
+      "3": "Clears with stable, symmetric landing."
+    },
+    "required_checks": ["foot_clearance", "landing_control"]
+  },
+  {
+    "id": "E15_kick_ball_standing",
+    "domain": "E",
+    "name": "Kick ball (standing)",
+    "instruction": "Child kicks a ball while standing without losing balance (as able).",
+    "criteria_0_to_3": {
+      "0": "Cannot kick.",
+      "1": "Initiates but needs support or loses balance.",
+      "2": "Kicks with reduced control/steps to recover.",
+      "3": "Kicks with controlled single-leg support and recovery."
+    },
+    "required_checks": ["single_leg_support", "coordination"]
+  },
+  {
+    "id": "E16_walk_on_line",
+    "domain": "E",
+    "name": "Walk along a line",
+    "instruction": "Child walks placing feet along a line (narrow base).",
+    "criteria_0_to_3": {
+      "0": "Cannot attempt.",
+      "1": "Initiates but requires support/steps off immediately.",
+      "2": "Walks with frequent corrections/steps off line.",
+      "3": "Walks with good control and minimal deviations."
+    },
+    "required_checks": ["narrow_base_balance"]
+  },
+  {
+    "id": "E17_walk_carry_object",
+    "domain": "E",
+    "name": "Walk while carrying an object",
+    "instruction": "Child walks forward while carrying a light object in hands.",
+    "criteria_0_to_3": {
+      "0": "Cannot walk carrying object.",
+      "1": "Initiates but needs support or drops object quickly.",
+      "2": "Walks independently but unstable or frequent pauses.",
+      "3": "Walks steadily while carrying without loss of balance."
+    },
+    "required_checks": ["dual_task_balance"]
+  },
+  {
+    "id": "E18_walk_fast",
+    "domain": "E",
+    "name": "Walk fast",
+    "instruction": "Child walks at a fast pace without running.",
+    "criteria_0_to_3": {
+      "0": "Cannot increase pace safely.",
+      "1": "Increases pace briefly but unstable.",
+      "2": "Walks fast with deviations/poor rhythm.",
+      "3": "Walks fast with controlled rhythm and balance."
+    },
+    "required_checks": ["gait_speed_control"]
+  },
+
+  {
+    "id": "A13_supine_leg_lift",
+    "domain": "A",
+    "name": "Lift one leg (supine)",
+    "instruction": "Child lifts one leg off the surface while supine.",
+    "criteria_0_to_3": {
+      "0": "No leg lift.",
+      "1": "Initiates but minimal lift.",
+      "2": "Lifts partially with compensations.",
+      "3": "Lifts with good selective control."
+    },
+    "required_checks": ["selective_control"]
+  },
+  {
+    "id": "A14_supine_bring_knees_up",
+    "domain": "A",
+    "name": "Bring knees up (supine)",
+    "instruction": "Child flexes hips/knees bringing knees toward trunk while supine.",
+    "criteria_0_to_3": {
+      "0": "Cannot initiate.",
+      "1": "Initiates but limited range.",
+      "2": "Completes with compensations/asymmetry.",
+      "3": "Completes smoothly with control."
+    },
+    "required_checks": ["hip_flexion", "symmetry"]
+  },
+  {
+    "id": "A15_prone_head_up",
+    "domain": "A",
+    "name": "Lift head in prone",
+    "instruction": "Child lifts head in prone and maintains briefly.",
+    "criteria_0_to_3": {
+      "0": "Cannot lift head.",
+      "1": "Initiates but cannot maintain.",
+      "2": "Maintains briefly or with wobble.",
+      "3": "Maintains steadily with good control."
+    },
+    "required_checks": ["head_control"]
+  },
+  {
+    "id": "A16_prone_weight_shift",
+    "domain": "A",
+    "name": "Weight shift in prone support",
+    "instruction": "In prone support, child shifts weight side-to-side without collapsing.",
+    "criteria_0_to_3": {
+      "0": "Cannot shift weight.",
+      "1": "Initiates but collapses/needs support.",
+      "2": "Shifts with limited control/asymmetry.",
+      "3": "Shifts smoothly with control."
+    },
+    "required_checks": ["weight_shift"]
+  },
+  {
+    "id": "A17_prone_to_quadruped",
+    "domain": "A",
+    "name": "Prone to quadruped",
+    "instruction": "Child transitions from prone to hands-and-knees.",
+    "criteria_0_to_3": {
+      "0": "Cannot initiate.",
+      "1": "Initiates but needs major assistance.",
+      "2": "Completes with compensations/light help.",
+      "3": "Completes independently."
+    },
+    "required_checks": ["transitional_movement"]
+  },
+
+  {
+    "id": "B13_sit_to_kneel",
+    "domain": "B",
+    "name": "Sitting to kneeling",
+    "instruction": "Child transitions from sitting to kneeling.",
+    "criteria_0_to_3": {
+      "0": "Cannot initiate.",
+      "1": "Initiates but needs major assistance.",
+      "2": "Completes with compensations/light help.",
+      "3": "Completes independently with control."
+    },
+    "required_checks": ["transitional_movement"]
+  },
+  {
+    "id": "B14_sit_balance_perturbation",
+    "domain": "B",
+    "name": "React to mild perturbation (sitting)",
+    "instruction": "While sitting, child maintains balance with a mild external perturbation or challenge (standardized in your protocol).",
+    "criteria_0_to_3": {
+      "0": "Loses balance immediately.",
+      "1": "Recovers only with support.",
+      "2": "Recovers independently but delayed/unstable.",
+      "3": "Recovers quickly with good control."
+    },
+    "required_checks": ["protective_reactions"]
+  },
+  {
+    "id": "B15_sit_move_on_surface",
+    "domain": "B",
+    "name": "Move/shift position in sitting",
+    "instruction": "Child shifts position in sitting (e.g., scoot) while staying upright.",
+    "criteria_0_to_3": {
+      "0": "Cannot shift position.",
+      "1": "Initiates but needs support.",
+      "2": "Shifts with compensations/instability.",
+      "3": "Shifts smoothly with control."
+    },
+    "required_checks": ["trunk_control", "weight_shift"]
+  },
+  {
+    "id": "B16_sit_to_prone",
+    "domain": "B",
+    "name": "Sitting to prone",
+    "instruction": "Child transitions from sitting down to prone (controlled).",
+    "criteria_0_to_3": {
+      "0": "Cannot initiate safely.",
+      "1": "Initiates but needs major assistance.",
+      "2": "Completes with compensations/poor control.",
+      "3": "Completes independently with controlled descent."
+    },
+    "required_checks": ["control_descent"]
+  },
+  {
+    "id": "B17_long_sit_hold",
+    "domain": "B",
+    "name": "Hold long sitting",
+    "instruction": "Child holds long sitting with upright trunk.",
+    "criteria_0_to_3": {
+      "0": "Cannot hold position.",
+      "1": "Holds briefly with support.",
+      "2": "Holds independently but slumped/unstable.",
+      "3": "Holds steadily with upright posture."
+    },
+    "required_checks": ["postural_control"]
+  },
+  {
+    "id": "B18_sit_cross_legged",
+    "domain": "B",
+    "name": "Sit cross-legged (as able)",
+    "instruction": "Child sits cross-legged and maintains balance.",
+    "criteria_0_to_3": {
+      "0": "Cannot achieve/hold.",
+      "1": "Achieves briefly with support.",
+      "2": "Holds independently but unstable.",
+      "3": "Holds steadily without hand support."
+    },
+    "required_checks": ["hip_mobility", "balance"]
+  },
+  {
+    "id": "B19_sit_transfer_to_chair",
+    "domain": "B",
+    "name": "Transfer between surfaces (sitting)",
+    "instruction": "Child transfers from one sitting surface to another (e.g., bench to chair) with control.",
+    "criteria_0_to_3": {
+      "0": "Cannot transfer.",
+      "1": "Transfers only with major assistance.",
+      "2": "Transfers independently but unstable/uses hands heavily.",
+      "3": "Transfers independently with good control."
+    },
+    "required_checks": ["transitional_movement", "hand_support"]
+  },
+  {
+    "id": "B20_sit_to_stand_no_hands",
+    "domain": "B",
+    "name": "Sit to stand (no hands)",
+    "instruction": "Child rises from sitting to standing without using hands.",
+    "criteria_0_to_3": {
+      "0": "Cannot rise.",
+      "1": "Initiates but cannot stand without help.",
+      "2": "Stands with compensations/partial hand use.",
+      "3": "Stands without hands with controlled extension."
+    },
+    "required_checks": ["hand_support"]
+  },
+
+  {
+    "id": "C13_kneel_walk_turn",
+    "domain": "C",
+    "name": "Kneel-walk and turn",
+    "instruction": "Child moves in high kneeling and changes direction.",
+    "criteria_0_to_3": {
+      "0": "Cannot change direction.",
+      "1": "Initiates but loses balance.",
+      "2": "Turns with instability/pauses.",
+      "3": "Turns smoothly with control."
+    },
+    "required_checks": ["dynamic_balance"]
+  },
+  {
+    "id": "C14_cruise_kneeling_along_surface",
+    "domain": "C",
+    "name": "Move along surface (kneeling or supported)",
+    "instruction": "Child moves along a stable surface while kneeling or partially supported (standardize in your protocol).",
+    "criteria_0_to_3": {
+      "0": "Cannot move along surface.",
+      "1": "Moves only with heavy support.",
+      "2": "Moves with compensations/instability.",
+      "3": "Moves with control and steady progression."
+    },
+    "required_checks": ["weight_shift", "hand_support"]
+  },
+
+  {
+    "id": "D13_stand_to_sit_controlled",
+    "domain": "D",
+    "name": "Stand to sit (controlled)",
+    "instruction": "Child lowers from standing to sitting with control.",
+    "criteria_0_to_3": {
+      "0": "Cannot lower safely.",
+      "1": "Lowers only with major assistance.",
+      "2": "Lowers independently but plops/poor control.",
+      "3": "Lowers independently with controlled descent."
+    },
+    "required_checks": ["control_descent"]
+  },
+
+  {
+    "id": "E19_walk_over_obstacle_series",
+    "domain": "E",
+    "name": "Walk over obstacles (series)",
+    "instruction": "Child walks over a short series of low obstacles without stopping.",
+    "criteria_0_to_3": {
+      "0": "Cannot clear obstacles.",
+      "1": "Clears only with major assistance/stops each time.",
+      "2": "Clears independently but touches obstacles/unstable.",
+      "3": "Clears smoothly without contact, steady rhythm."
+    },
+    "required_checks": ["foot_clearance", "dynamic_balance"]
+  },
+  {
+    "id": "E20_run_10m",
+    "domain": "E",
+    "name": "Run 10 meters",
+    "instruction": "Child runs 10 meters at best effort.",
+    "criteria_0_to_3": {
+      "0": "Unable to run or cannot complete distance.",
+      "1": "Fast walk; no clear flight phase.",
+      "2": "Runs with reduced coordination/limited flight phase.",
       "3": "Runs with clear flight phase and stable rhythm."
     },
-    "required_checks": [
-      "flight_phase"
-    ]
+    "required_checks": ["flight_phase"]
   },
   {
-    "id": "jump_forward",
-    "name": "Jump forward",
-    "instruction": "Child jumps forward using both feet.",
+    "id": "E21_jump_in_place_two_feet",
+    "domain": "E",
+    "name": "Jump in place (two feet)",
+    "instruction": "Child jumps up and down in place with both feet together.",
     "criteria_0_to_3": {
-      "0": "Unable to leave the ground.",
-      "1": "Minimal jump with significant asymmetry or loss of balance.",
-      "2": "Jump with partial symmetry or unstable landing.",
-      "3": "Symmetrical jump with clear flight phase and stable landing."
+      "0": "Cannot leave ground.",
+      "1": "Minimal lift or unsafe landing.",
+      "2": "Clear jump but unstable/asymmetric landing.",
+      "3": "Clear jump with stable, symmetric landing."
     },
-    "required_checks": [
-      "flight_phase",
-      "symmetry"
-    ]
+    "required_checks": ["flight_phase", "landing_control"]
+  },
+  {
+    "id": "E22_hop_repeated",
+    "domain": "E",
+    "name": "Repeated hops (one foot)",
+    "instruction": "Child performs repeated hops on one foot (as able).",
+    "criteria_0_to_3": {
+      "0": "Cannot hop.",
+      "1": "Single minimal hop or immediate loss of balance.",
+      "2": "Multiple hops with instability/limited control.",
+      "3": "Multiple hops with controlled rhythm and landing."
+    },
+    "required_checks": ["single_leg_power", "landing_control"]
   }
 ]
